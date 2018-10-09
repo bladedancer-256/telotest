@@ -46,7 +46,7 @@ class TestStringMethods(unittest.TestCase):
     def test_determine_hexamer(self):
         # Will find known pattern CCCTAA in sequence
         tst_seq = determine_hexamer(self.src_seq)
-        self.assertEqual(TELO_HEXAMERS[1], tst_seq)
+        self.assertEqual(TELO_HEXAMERS[0], tst_seq)
 
         # Should not find any pattern in sequence
         tst_seq = determine_hexamer(self.no_patt)
